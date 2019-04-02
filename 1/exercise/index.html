@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>VueTodo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Vue fonctionne dans cet élément -->
+      <div class="todo">
+        <div class="new-task">
+          <input type="text" placeholder="Press enter to add the task" />
+        </div>
+        <div class="tasks">
+            <span>No todo added</span>
+          <ul class="active">
+            <li>
+              Apprendre Vue
+              <button type="button" class="delete"></button>
+              <button type="button" class="done"></button>
+            </li>
+          </ul>
+          <ul class="completed">
+              <li>
+                Faire les courses
+                <button type="button" class="delete"></button>
+                <button type="button" class="undo"></button>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

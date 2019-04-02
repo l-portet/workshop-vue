@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>VueTodo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Vue fonctionne dans cet élément -->
+      <div class="todo">
+        <div class="new-task">
+          <input type="text" placeholder="Press enter to add the task" v-model="currentTodo" @keypress.enter="addItem" />
+        </div>
+        <div class="tasks">
+            <span v-if="!todos.active.length && !todos.completed.length">No todo added</span>
+          <ul class="active">
+            <li v-for="(item, index) in todos.active">
+              {{ item }}
+              <button type="button" class="delete" @click="deleteItem('active', index)"></button>
+              <button type="button" class="done" @click="setDone(index)"></button>
+            </li>
+          </ul>
+          <ul class="completed">
+              <li v-for="(item, index) in todos.completed">
+                {{ item }}
+                <button type="button" class="delete" @click="deleteItem('completed', index)"></button>
+                <button type="button" class="undo" @click="setUndone(index)"></button>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

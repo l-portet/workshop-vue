@@ -1,0 +1,117 @@
+html, body {
+    background: linear-gradient(to top right, #111A22, #192737);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    color: #c3dbf7;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.todo {
+    width: 300px;
+    margin-top: 40px;
+}
+
+.new-task {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.new-task input {
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 134, 255, .1);
+    font: inherit;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: none;
+    color: inherit;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #101921;
+}
+
+.new-task input::placeholder {
+    color: #5d7ca3;
+}
+
+.new-task input:focus {
+    border: 2px solid rgba(59, 134, 255, .4);
+    outline: none;
+}
+
+.tasks {
+    width: 300px;
+}
+
+.tasks .active, .tasks .completed {
+    padding: 0;
+    margin: 0;
+}
+
+.tasks .completed {
+    margin-top: 20px;
+    text-decoration: line-through;
+}
+
+.tasks .completed, .tasks .completed * {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tasks .active li, .tasks .completed li {
+    list-style: none;
+    margin: 8px 0;
+    padding-left: 5px;
+}
+
+.tasks .active li:hover button, .tasks .completed li:hover button {
+    display: inline-block;
+}
+
+.tasks button {
+    display: none;
+    float: right;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: opacity .2s ease-in-out;
+}
+
+.tasks button:hover {
+    opacity: .7;
+}
+
+.tasks button.done {
+    background: url(../img/done.png) no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.tasks button.delete {
+    width: 16px;
+    height: 16px;
+    background: url(../img/cross.png) no-repeat;
+    background-size: contain;
+}
+
+.tasks button.undo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: url(../img/undo.png) no-repeat;
+    background-size: contain;
+}
