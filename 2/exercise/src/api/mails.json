@@ -1,0 +1,62 @@
+[
+  {
+    "sender": "Jon Snow",
+    "object": "White walkers",
+    "content": "Hey! I've found a way to kill the white walkers dude!!",
+    "timeFrom": {
+      "value": 2,
+      "unit": "mins"
+    },
+    "isRead": false
+  },
+  {
+    "sender": "Arya Stark",
+    "object": "Free plastic surgery",
+    "content": "You don't like your face? Let me help you..",
+    "timeFrom": {
+      "value": 23,
+      "unit": "mins"
+    },
+    "isRead": false
+  },
+  {
+    "sender": "Ramsay",
+    "object": "Legal Papers",
+    "content": "Hello, do you know how to change a citizen's name? It's for a friend",
+    "timeFrom": {
+      "value": 3,
+      "unit": "hours"
+    },
+    "isRead": false
+},
+  {
+    "sender": "Joffrey Baratheon",
+    "object": "Cake Recipe",
+    "content": "Hey, your cake in my wedding was very good. Could you tell me your recipe?",
+    "timeFrom": {
+      "value": 7,
+      "unit": "hours"
+    },
+    "isRead": false
+},
+  {
+    "sender": "Daenerys Targaryen",
+    "object": "Genealogy tree",
+    "content": "Have you got my genealogy tree? Just want to check something..",
+    "timeFrom": {
+      "value": 12,
+      "unit": "hours"
+    },
+    "isRead": false
+},
+  {
+    "sender": "Theon Greyjoy",
+    "object": "Male Perf",
+    "content": "Hey, this adverising says it could solve my problem, what do you think??",
+    "timeFrom": {
+      "value": 1,
+      "unit": "day"
+    },
+    "isRead": false
+}
+]
