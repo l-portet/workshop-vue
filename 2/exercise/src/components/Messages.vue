@@ -10,8 +10,8 @@
           <th class="object">
             Object
             <span class="content">Content</span>
-            <th class="date">time ago</th>
           </th>
+          <th class="date">time ago</th>
         </tr>
       </table>
     </div>
@@ -25,8 +25,8 @@
           <th class="object">
             Object
             <span class="content">Content</span>
-            <th class="date">time ago</th>
           </th>
+          <th class="date">time ago</th>
         </tr>
       </table>
     </div>
