@@ -27,7 +27,7 @@ export default {
       }
   },
   created() {
-    this.mails = this.$api.getMails();
+    this.$api.getMails().then(mails => this.mails = mails);
   }
 }
 </script>

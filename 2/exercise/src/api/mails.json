@@ -37,7 +37,7 @@
       "value": 7,
       "unit": "hours"
     },
-    "isRead": false
+    "isRead": true
 },
   {
     "sender": "Daenerys Targaryen",
@@ -47,7 +47,7 @@
       "value": 12,
       "unit": "hours"
     },
-    "isRead": false
+    "isRead": true
 },
   {
     "sender": "Theon Greyjoy",
